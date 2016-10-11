@@ -12,8 +12,8 @@ test_setup() {
         LOG_LEVEL=5
         eval $(udevadm info --export --query=env --name=${LOOPDEV}p2)
 
-        inst_any /usr/share/zoneinfo/Europe/Kiev
-        inst_any /usr/share/zoneinfo/Europe/Berlin
+        inst_any /etc/zoneinfo/Europe/Kiev
+        inst_any /etc/zoneinfo/Europe/Berlin
 
         setup_basic_environment
         mask_supporting_services

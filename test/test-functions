@@ -885,7 +885,7 @@ install_keymaps() {
 }
 
 install_zoneinfo() {
-    for i in /usr/share/zoneinfo/{,*/,*/*/}*; do
+    for i in /etc/zoneinfo/{,*/,*/*/}*; do
         [[ -f $i ]] || continue
         inst $i
     done
