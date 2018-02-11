@@ -3176,9 +3176,6 @@ install_data('LICENSE.GPL2',
              'src/libsystemd/sd-bus/GVARIANT-SERIALIZATION',
              install_dir : docdir)
 
-meson.add_install_script('sh', '-c', mkdir_p.format(systemdstatedir))
-meson.add_install_script('sh', '-c', 'touch $DESTDIR@0@'.format(prefixdir))
-
 ############################################################
 
 meson_check_help = find_program('tools/meson-check-help.sh')
