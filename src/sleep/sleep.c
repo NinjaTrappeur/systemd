@@ -178,6 +178,7 @@ static int execute(char **modes, char **states) {
         };
         static const char* const dirs[] = {
                 SYSTEM_SLEEP_PATH,
+                "/etc/systemd/system-sleep",
                 NULL
         };
 
